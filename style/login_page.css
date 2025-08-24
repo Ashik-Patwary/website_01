@@ -33,6 +33,9 @@ body{
 .hidden{
     display: none;
 }
+.overflow{
+    overflow: hidden;
+}
 .login_from{
     position: fixed;
     top: 0;
@@ -40,6 +43,7 @@ body{
     height: 100%;
     width: 100%;
     background-color: rgb(144, 224, 239, 0.3);
+    backdrop-filter: blur(3px);
 }
 .login_content{
     position: absolute;
@@ -59,6 +63,19 @@ body{
     height: 100px;
     width: 100px;
     border-radius: 50%;
+}
+#login_form_close_btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 31px;
+    width: 34px;
+    font-size: larger;
+    font-weight: bolder;
+    background-color: red;
+    color: #fff;
+    border: none;
+    cursor: pointer;
 }
 .user_img img{
     height: 100px;
@@ -80,7 +97,7 @@ body{
     font-size: larger;
     border-bottom: 1px solid #000;
 }
-.login_content button{
+.login_content #log_in_btn{
     margin-top: 20px;
     padding: 8px;
     width: 100%;

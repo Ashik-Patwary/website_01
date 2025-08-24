@@ -10,21 +10,25 @@
     <div class="login_btn">
         <button id="login_btn">Log In</button>
     </div>
-    <div class="login_from">
+    
+    <div id="popup" class="login_from hidden">
         <div class="login_content">
+            <button id="login_form_close_btn">X</button>
             <div class="user_img">
                 <img src="img/user.png" alt="" srcset="">
             </div>
             <h1>Log In</h1>
             <div class="login_box">
                 <p>Email</p>
-                <input type="text" name="" id="">
+                <input type="text" name="" id="user_name">
                 <p>Password</p>
-                <input type="password" name="" id="">
-                <button>Log In</button>
+                <input type="password" name="" id="user_password">
+                <button id="log_in_btn">Log In</button>
                 <p><a href="#">Register Now</a></p>
             </div>
         </div>
     </div>
+    <script src="js/common.js"></script>
+    <script src="js/login_page.js"></script>
 </body>
 </html>
