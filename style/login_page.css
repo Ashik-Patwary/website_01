@@ -1,0 +1,101 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #90e0ef;
+}
+.login_btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#login_btn{
+    height: 100%;
+    width: 100%;
+    font-size: xx-large;
+    font-weight: bolder;
+    background-color: #3a86ff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+#login_btn:hover{
+    filter: drop-shadow(0 0 20px #3a86ff);
+    transition: ease-in-out .2s;
+}
+.hidden{
+    display: none;
+}
+.login_from{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(144, 224, 239, 0.3);
+}
+.login_content{
+    position: absolute;
+    padding: 20px 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px #000;
+}
+.user_img{
+    position: absolute;
+    top: calc(-100px / 2);
+    left: calc(50% - 50px);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.user_img img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 10px #90e0ef);
+}
+.login_content h1{
+    margin-top: 45px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.login_content input{
+    padding: 6px;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-size: larger;
+    border-bottom: 1px solid #000;
+}
+.login_content button{
+    margin-top: 20px;
+    padding: 8px;
+    width: 100%;
+    font-size: larger;
+    font-weight: bolder;
+    border: none;
+    background-color: #3a86ff;
+    color: #fff;
+    cursor: pointer;
+}
+.login_content a{
+    text-decoration: none;
+    color: #90e0ef;
+}
+.login_content a:hover{
+    text-decoration: underline;
+    color: #90e0ef;
+}
