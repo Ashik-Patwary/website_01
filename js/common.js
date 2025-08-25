@@ -18,3 +18,10 @@ function getInputValue(id){
     input.value = "";
     return value;
 }
+
+function getInnerTextValue(id){
+    const innerText = document.getElementById(id);
+    const getValue = innerText.innerText;
+    const value = parseFloat(getValue);
+    return value;
+}
