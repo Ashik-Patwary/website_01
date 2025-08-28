@@ -1,11 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Bank page</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/bank_page.css" />
+    <title>Bank Page</title>
+  </head>
+  <body>
+    <div class="bank_container">
+      <div class="bank_png">
+        <img src="img/bank_png.svg" alt="" />
+      </div>
+      <h1>Bank</h1>
+      <div class="btn_section">
+        <button>Add Cash</button>
+        <button>Cash Out</button>
+        <button>History</button>
+      </div>
+
+      <!-- add money section -->
+      <div id="add_money_popup" class="add_money_section hidden">
+        <div class="money_section">
+            <div class="close_btn">
+            <button id="close_btn">X</button>
+            </div>
+           <div class="money_content">
+             <p>Enter Your Amount</p>
+            <input type="text" name="" id="user_amount">
+            <p>Enter Your Password</p>
+            <input type="password" name="" id="user_pass">
+            <button id="add_money_btn">Add Money</button>
+           </div>
+        </div>
+        </div>
+      </div>
+      <!-- add money section -->
+
+      <!-- add money section -->
+      <div class="add_money_section">
+        <div class="money_section">
+            <div class="close_btn">
+            <button id="close_btn">X</button>
+            </div>
+           <div class="money_content">
+             <p>Enter Your Amount</p>
+            <input type="text" name="" id="user_amount">
+            <p>Enter Your Password</p>
+            <input type="password" name="" id="user_pass">
+            <button id="add_money_btn">Add Money</button>
+           </div>
+        </div>
+        </div>
+      </div>
+      <!-- add money section -->
+
+      <!-- add money section -->
+      <div class="add_money_section">
+        <div class="money_section">
+            <div class="close_btn">
+            <button id="close_btn">X</button>
+            </div>
+           <div class="money_content">
+             <p>Enter Your Amount</p>
+            <input type="text" name="" id="user_amount">
+            <p>Enter Your Password</p>
+            <input type="password" name="" id="user_pass">
+            <button id="add_money_btn">Add Money</button>
+           </div>
+        </div>
+        </div>
+      </div>
+      <!-- add money section -->
+    </div>
+
+    <script src="js/common.js"></script>
+    <script src="js/bank_page.js"></script>
+  </body>
 </html>

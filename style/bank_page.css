@@ -1,0 +1,92 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: #ccc;
+}
+.bank_container {
+  position: absolute;
+  padding: 8px 10px;
+  height: 409px;
+  width: 350px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  box-shadow: 0 0 15px #000;
+}
+.bank_png {
+  position: absolute;
+  top: calc(-100px / 2);
+  left: calc(50% - 50px);
+  height: 100px;
+  width: 100px;
+  filter: drop-shadow(0 0 10px #000);
+}
+.bank_container h1 {
+  margin-top: 40px;
+  text-align: center;
+}
+.btn_section {
+  display: flex;
+  justify-content: space-around;
+}
+.btn_section button {
+  height: 30px;
+  width: 30%;
+  border: none;
+  background-color: blue;
+  font-weight: bolder;
+  color: #fff;
+  cursor: pointer;
+}
+.add_money_section{
+    margin-top: 15px;
+    height: auto;
+}
+.money_section{
+    height: 250px;
+    border: 1px solid #ccc;
+}
+.money_content{
+    padding: 5px;
+    margin-top: 25px;
+}
+.close_btn{
+    position: relative;
+    background-color: red;
+}
+#close_btn{
+    position: absolute;
+    height: 31px;
+    width: 34px;
+    top: 0;
+    right: 0;
+    font-weight: bolder;
+    font-size: x-large;
+    color: #fff;
+    background-color: red;
+    border: none;
+    cursor: pointer;
+    
+}
+.money_section input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 7px;
+}
+#add_money_btn{
+    margin: 13px 0 10px;
+    width: 100%;
+    padding: 5px 8px;
+    font-size: large;
+    font-weight: bold;
+    border: none;
+    background-color: blue;
+    color: #fff;
+    cursor: pointer;
+}
+.hidden{
+    display: none;
+}
