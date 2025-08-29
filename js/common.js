@@ -25,3 +25,9 @@ function getInnerTextValue(id){
     const value = parseFloat(getValue);
     return value;
 }
+
+function hideAllPopups(){
+    addMoneyPopup.classList.add('hidden');
+    cashOutPopup.classList.add('hidden');
+    historyPopup.classList.add('hidden');
+}

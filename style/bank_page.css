@@ -8,13 +8,20 @@ body {
 .bank_container {
   position: absolute;
   padding: 8px 10px;
-  height: 409px;
+  height: 430px;
   width: 350px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #fff;
   box-shadow: 0 0 15px #000;
+}
+.active {
+  border: none;
+  background-color: blue;
+  font-weight: bolder;
+  color: #fff;
+  cursor: pointer;
 }
 .bank_png {
   position: absolute;
@@ -36,57 +43,64 @@ body {
   height: 30px;
   width: 30%;
   border: none;
-  background-color: blue;
+  /* background-color: blue; */
   font-weight: bolder;
+  /* color: #fff; */
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+}
+.overflow {
+  overflow: hidden;
+}
+.transaction_container {
+  margin: 10px auto;
+  height: auto;
+  width: auto;
+  border: 1px solid #ccc;
+  backdrop-filter: blur(15px);
+}
+.popup_close_btn {
+  display: flex;
+  justify-content: end;
+}
+
+#close_btn {
+  width: 32px;
+  height: 26px;
+  font-size: larger;
+  font-weight: bolder;
+  border: none;
+  background-color: red;
   color: #fff;
   cursor: pointer;
 }
-.add_money_section{
-    margin-top: 15px;
-    height: auto;
+.popup_content {
+  height: auto;
 }
-.money_section{
-    height: 250px;
-    border: 1px solid #ccc;
+.title {
+  margin-top: -15px;
+  text-align: center;
 }
-.money_content{
-    padding: 5px;
-    margin-top: 25px;
+.popup_form {
+  padding: 5px;
+  height: 100%;
 }
-.close_btn{
-    position: relative;
-    background-color: red;
+.popup_form input {
+  padding: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: larger;
+  outline: none;
 }
-#close_btn{
-    position: absolute;
-    height: 31px;
-    width: 34px;
-    top: 0;
-    right: 0;
-    font-weight: bolder;
-    font-size: x-large;
-    color: #fff;
-    background-color: red;
-    border: none;
-    cursor: pointer;
-    
-}
-.money_section input{
-    width: 100%;
-    box-sizing: border-box;
-    padding: 7px;
-}
-#add_money_btn{
-    margin: 13px 0 10px;
-    width: 100%;
-    padding: 5px 8px;
-    font-size: large;
-    font-weight: bold;
-    border: none;
-    background-color: blue;
-    color: #fff;
-    cursor: pointer;
-}
-.hidden{
-    display: none;
+.popup_form button {
+  padding: 4px 8px;
+  margin: 10px 0 0;
+  width: 100%;
+  background-color: blue;
+  color: #fff;
+  font-weight: bolder;
+  border: none;
+  cursor: pointer;
 }
