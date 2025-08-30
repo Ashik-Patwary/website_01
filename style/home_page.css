@@ -1,6 +1,8 @@
 body {
   padding: 0;
   margin: 0;
+  height: 100%;
+  width: 100%;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   box-sizing: border-box;
@@ -18,7 +20,7 @@ header a{
   color: #fff;
 }
 .first_nav {
-  padding: 10px;
+  padding: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,15 +32,22 @@ header a{
   font-size: xx-large;
   font-weight: bolder;
 }
-.secund_nav {
-  margin-top: 10px;
-  height: 90px;
-  width: 100%;
-  background: transparent;
+.secund_nav{
+  position: absolute;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  padding: 0;
+  right: 10px;
+  height: 200px;
+  width: 280px;
   border: 1px solid #ccc;
   backdrop-filter: blur(3px);
-  background-color: rgb(255, 0, 110, 0.4);
+  box-shadow: 0 0 10px #000;
 }
+
 .blog_btn {
   height: 70px;
   width: 110px;
@@ -54,16 +63,11 @@ header a{
   transition: ease-in-out 0.3s;
   box-shadow: 0 0 10px #ff006e;
 }
-.secund_nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
+
 .secund_nav button {
   height: 70px;
   width: 125px;
-  font-size: xx-large;
+  font-size: large;
   font-weight: bolder;
   border: none;
   background-color: #ff006e;
@@ -73,10 +77,9 @@ header a{
 .secund_nav button:hover {
   transition: ease-in-out 0.3s;
   box-shadow: 0 0 10px #ff006e;
-  /* filter: drop-shadow(0 0 10px #ff006e); */
 }
 main {
-  margin-top: 280px;
+  margin-top: 220px;
 }
 .card_container {
   margin: 90px auto;
@@ -192,6 +195,57 @@ main {
   color: #fff;
   cursor: pointer;
 }
+.add_money_popup_section{
+  padding: 10px;
+  position: fixed;
+  gap: 20px;
+  top: 105px;
+  width: 100%;
+  height: 90%;
+  backdrop-filter: blur(5px);
+}
+#close_btn{
+  position: absolute;
+  right: 22px;
+  top: 0;
+  height: 33px;
+  width: 36px;
+  background-color: red;
+  color: #fff;
+  border: none;
+  font-weight: bolder;
+  font-size: large;
+  cursor: pointer;
+}
+.card{
+  margin: 20px auto;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 35%;
+  border: 2px solid #ccc;
+  backdrop-filter: blur(15px);
+  border-radius: 8px;
+}
+.content{
+  height: 200px;
+  width: 200px;
+  background-color: #ff006e;
+  border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+
+
 
 footer {
   height: 90px;
