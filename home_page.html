@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home page</title>
+    <script
+      src="https://kit.fontawesome.com/a5fd66796b.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style/home_page.css" />
   </head>
   <body>
@@ -294,22 +298,117 @@
 
       <div id="second_popup" class="add_money_popup_section hidden">
         <button id="close_btn">X</button>
-        <div class="card"> 
-
+        <div class="card">
           <div class="content">
-            <h3>...</h3>
-          </div>
-          <div class="content">
-
-          </div>
-          <div class="content">
-
-          </div>
-          <div class="content">
-
+            <span id="heading_png"><img src="img/dots.png" alt="" /></span>
+            <div class="content_content">
+              <img class="bank_png" src="img/deposit.png" alt="" />
+              <h1>Add Money</h1>
+              <button id="add_money_popup_button" class="button">Add Money</button>
+            </div>
           </div>
 
+          <div class="content">
+            <span id="heading_png"><img src="img/dots.png" alt="" /></span>
+            <div class="content_content">
+              <img class="bank_png" src="img/withdraw.png" alt="" />
+              <h1>Cash Out</h1>
+              <button id="cash_out_popup_button" class="button">cash Out</button>
+            </div>
+          </div>
+
+          <div class="content">
+            <span id="heading_png"><img src="img/dots.png" alt="" /></span>
+            <div class="content_content">
+              <img class="bank_png" src="img/health-report.png" alt="" />
+              <h1>history</h1>
+              <button id="history_button" class="button">history</button>
+            </div>
+          </div>
+
+          <div class="content">
+            <h2 id="heading_png"><img src="img/dots.png" alt="" /></h2>
+            <div class="content_content">
+              <img class="bank_png" src="img/donation.png" alt="" />
+              <h1>Donate</h1>
+              <button id="donate_button" class="button">Donate</button>
+            </div>
+          </div>
         </div>
+
+        <!-- add money popup --> 
+        <div id="popup_add_money" class="add_money_popup hidden">
+          <button id="add_money_btn_close" class="btn_close">X</button>
+          <div class="title_img">
+            <img src="img/deposit.png" alt="" />
+          </div>
+          <div class="title">
+            <h1>Add Money</h1>
+          </div>
+          <div class="add_money_form">
+            <p>Enter your amount</p>
+            <input type="text" name="" id="add_money_user_balance" />
+            <p>Enter your pin</p>
+            <input type="password" name="" id="add_money_user_pin" />
+            <button id="money_add_button">Add Money</button>
+          </div>
+        </div>
+        <!-- add money popup -->
+
+        <!-- Cash out popup --> 
+        <div id="popup_cash_out" class="add_money_popup hidden">
+          <button id="cash_out_btn_close" class="btn_close">X</button>
+          <div class="title_img">
+            <img src="img/deposit.png" alt="" />
+          </div>
+          <div class="title">
+            <h1>Cash Out</h1>
+          </div>
+          <div class="add_money_form">
+            <p>Enter your amount</p>
+            <input type="text" name="" id="user_cash_out" />
+            <p>Enter your pin</p>
+            <input type="password" name="" id="user_cash_out_pin" />
+            <button id="cash_out_button">Cash Out</button>
+          </div>
+        </div>
+        <!-- Cash out popup -->
+
+        <!-- add money popup -->
+
+        <!-- Cash out popup --> 
+        <div id="popup_history" class="add_money_popup hidden">
+          <button id="hiostory_btn_close" class="btn_close">X</button>
+          <div class="title_img">
+            <img src="img/deposit.png" alt="" />
+          </div>
+          <div class="title">
+            <h1>History</h1>
+          </div>
+          <div class="cash_out_form">
+            <p>Hello</p>
+          </div>
+        </div>
+        <!-- Cash out popup -->
+
+        <!-- Cash out popup --> 
+       <div id="popup_donate" class="add_money_popup hidden">
+          <button id="donate_button_close" class="btn_close">X</button>
+          <div class="title_img">
+            <img src="img/deposit.png" alt="" />
+          </div>
+          <div class="title">
+            <h1>Donate</h1>
+          </div>
+          <div class="add_money_form">
+            <p>Enter your amount</p>
+            <input type="text" name="" id="User" />
+            <p>Enter your pin</p>
+            <input type="password" name="" id="" />
+            <button>Donate</button>
+          </div>
+        </div>
+        <!-- Cash out popup -->
       </div>
     </main>
     <script src="js/common.js"></script>
